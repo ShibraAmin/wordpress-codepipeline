@@ -4,10 +4,10 @@ phases:
   build:
     commands:
       - mv wp-config-sample.php wp-config.php
-      - sed -i 's/database_name_here/codebuild/' wp-config.php
-      - sed -i 's/username_here/codebuild/' wp-config.php
-      - sed -i 's/password_here/codebuild/' wp-config.php
-      - sed -i 's/localhost/cicdpipe.cfdyrms3ajre.ap-south-1.rds.amazonaws.com/' wp-config.php
+      - sed -i 's/database_name_here/cicddb/' wp-config.php
+      - sed -i 's/username_here/wordpress/' wp-config.php
+      - sed -i 's/password_here/wordpress/' wp-config.php
+      - sed -i 's/localhost/cicddb.cfdyrms3ajre.ap-south-1.rds.amazonaws.com/' wp-config.php
 artifacts:
   files:
     - "**/*"
