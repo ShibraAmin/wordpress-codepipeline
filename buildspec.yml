@@ -5,8 +5,8 @@ phases:
     commands:
       - mv wp-config-sample.php wp-config.php
       - sed -i 's/database_name_here/codepipe/' wp-config.php
-      - sed -i 's/username_here/wordpress/' wp-config.php
-      - sed -i 's/password_here/wordpress/' wp-config.php
+      - sed -i 's/username_here/codepipe/' wp-config.php
+      - sed -i 's/password_here/codepipe/' wp-config.php
       - sed -i 's/localhost/codepipe.cfdyrms3ajre.ap-south-1.rds.amazonaws.com/' wp-config.php
 artifacts:
   files:
